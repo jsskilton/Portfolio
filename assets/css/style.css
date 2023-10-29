@@ -32,7 +32,6 @@ nav {
 header nav ul {
   display: inline-block;
   margin-left: 25px;
-  /* float:right; */
 }
 
 .right {
@@ -44,7 +43,6 @@ header nav ul {
   margin-right: 20px;
 }
 
-/* Style the ul elements within .right */
 .right ul {
   list-style: none;
 }
@@ -163,14 +161,11 @@ p {
 
 /* SUB-SECTION About Me */
 
-#aboutme .section-right{
-  display: flex;
-  flex-direction:row;
-}
-
 #me-jpg {
   height: 100%;
   max-width: 20%;
+  float: right;
+  min-width: 200px;
 }
 
 /* SUB-SECTION Work */
@@ -281,7 +276,7 @@ p {
 
 /* MEDIUM SCREEN */
 
-/* @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   #navigation {
     display: none;
   }
@@ -302,6 +297,85 @@ p {
     "project5"
     ;
   }
-} */
+
+  .grid-header {
+    font-size: 20px;
+  }
+
+  .grid-area p {
+    font-size: 14px;
+  }
+
+  .right a {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  h1{ 
+    font-size:30px;
+  }
+
+  .hero-banner h2 {
+    font-size: 18px;
+  }
+
+  .section-left {
+    font-size: 20px;
+  }
+
+  .section-right {
+    font-size: 16px;
+  }
+
+}
 
 /* SMALL SCREEN */
+@media only screen and (max-width: 600px) {
+  .right {
+    display:list-item;
+    list-style: none;
+  }
+
+  .page-section{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "section-left"
+    "section-right"
+    ;
+  }
+
+  .section-left{
+    grid-area: section-left;
+    text-align: center;
+  }
+
+  .section-right{
+    grid-area: section-right;
+  }
+
+  #aboutme .section-right{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "me-jpg"
+    "aboutmetext"
+    ;
+  }
+
+  #aboutmetext {
+    grid-area: aboutmetext;
+  }
+
+  #me-jpg{
+    grid-area: me-jpg; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-right {
+    width:100%;
+  }
+
+}
