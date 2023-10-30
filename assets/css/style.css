@@ -222,6 +222,7 @@ p {
   border-style: solid;
   border-color: var(--box-outline-color);
   text-decoration: none;
+  min-width:0;
 }
 
 .grid-text {
@@ -230,7 +231,7 @@ p {
   height: 120px;
   width:400px;
   margin-bottom: 45px;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .grid-header {
@@ -240,7 +241,7 @@ p {
 
 .grid-area p {
   color: var(--text-color);
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom:0px;
 }
 
@@ -325,6 +326,10 @@ p {
 
   .section-right {
     font-size: 16px;
+  }
+
+  .grid-text {
+    max-width: 50%;  
   }
 
 }
