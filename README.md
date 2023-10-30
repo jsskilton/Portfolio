@@ -18,8 +18,6 @@ Follow the URL link provided: https://jsskilton.github.io/Portfolio/
 
 ## Usage
 
-NEED TO UPDATE THIS
-
 Navigation bar at the top links to the three sections: About Me, Work, Contact Me, CV
 
 ![alt text](assets/images/screenshot.png)
